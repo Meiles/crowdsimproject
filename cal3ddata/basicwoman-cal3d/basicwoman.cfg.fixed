@@ -1,0 +1,32 @@
+#
+# cal3d model configuration file
+#
+# File written by Misfit Model 3D
+# http://www.misfitcode.com/misfitmodel3d/
+
+path=data/basicwoman/
+
+# --- Skeleton ---
+skeleton = basicwoman.csf
+
+# --- Animations ---
+animation=cally_idle.caf
+animation=cally_tornado_kick.caf
+animation=cally_walk.caf
+animation=simpleman_wait.caf
+animation=cally_jog.caf
+animation=cally_shoot_arrow.caf
+animation=cally_wave.caf
+
+# --- Meshes ---
+mesh = basicwoman.cmf
+
+# --- Materials ---
+material= Figure1:Mat.xrf
+material= basic_woman:Woman_1006.xrf
+material= bluejeans.xrf
+material= skin.xrf
+material= shoes.xrf
+material= hair.xrf
+material= shirt.xrf
+

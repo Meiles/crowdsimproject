@@ -1,0 +1,37 @@
+#
+# cal3d model configuration file
+#
+# File written by Misfit Model 3D
+# http://www.misfitcode.com/misfitmodel3d/
+
+path=data/alienwoman/
+
+# --- Skeleton ---
+skeleton = alienwoman.csf
+
+# --- Animations ---
+animation=cally_idle.caf
+animation=cally_tornado_kick.caf
+animation=cally_walk.caf
+animation=simpleman_wait.caf
+animation=cally_jog.caf
+animation=cally_shoot_arrow.caf
+animation=cally_wave.caf
+
+# --- Meshes ---
+mesh= armor.cmf
+mesh= beltish.cmf
+mesh= head.cmf
+mesh= lcuff.cmf
+mesh= leggings.cmf
+mesh= lleg.cmf
+mesh= polysurface18.cmf
+mesh= rcuff.cmf
+mesh= shoes.cmf
+
+# --- Materials ---
+material= fullbody.xrf
+material= initialShadingGroup.xrf
+material= other_mat.xrf
+material= shoes.xrf
+

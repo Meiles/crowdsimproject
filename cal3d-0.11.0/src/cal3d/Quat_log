@@ -1,0 +1,162 @@
+bone.cpp:void CalBone::blendState(float weight, const CalVector& translation, const CalQuaternion& rotation)
+bone.cpp:void CalBone::setRotation(const CalQuaternion& rotation)
+bone.cpp:const CalQuaternion& CalBone::getRotation()
+bone.cpp:const CalQuaternion& CalBone::getRotationAbsolute()
+bone.cpp:const CalQuaternion& CalBone::getRotationBoneSpace()
+bone.h:  void blendState(float weight, const CalVector& translation, const CalQuaternion& rotation);
+bone.h:  void setRotation(const CalQuaternion& rotation);
+bone.h:  const CalQuaternion& getRotation();
+bone.h:  const CalQuaternion& getRotationAbsolute();
+bone.h:  const CalQuaternion& getRotationBoneSpace();
+bone.h:  CalQuaternion m_rotation;
+bone.h:  CalQuaternion m_rotationAbsolute;
+bone.h:  CalQuaternion m_rotationBoneSpace;
+cal3d_wrapper.cpp:void CalBone_BlendState(CalBone *self, float weight, CalVector *pTranslation, CalQuaternion *pRotation)
+cal3d_wrapper.cpp:CalQuaternion *CalBone_GetRotation(CalBone *self)
+cal3d_wrapper.cpp:  return &(const_cast<CalQuaternion&>(self->getRotation()));
+cal3d_wrapper.cpp:CalQuaternion *CalBone_GetRotationAbsolute(CalBone *self)
+cal3d_wrapper.cpp:  return &(const_cast<CalQuaternion&>(self->getRotationAbsolute()));
+cal3d_wrapper.cpp:CalQuaternion *CalBone_GetRotationBoneSpace(CalBone *self)
+cal3d_wrapper.cpp:  return &(const_cast<CalQuaternion&>(self->getRotationBoneSpace()));
+cal3d_wrapper.cpp:void CalBone_SetRotation(CalBone *self, CalQuaternion *pRotation)
+cal3d_wrapper.cpp:CalQuaternion *CalCoreBone_GetRotation(CalCoreBone *self)
+cal3d_wrapper.cpp:  return &(const_cast<CalQuaternion&>(self->getRotation()));
+cal3d_wrapper.cpp:CalQuaternion *CalCoreBone_GetRotationAbsolute(CalCoreBone *self)
+cal3d_wrapper.cpp:  return &(const_cast<CalQuaternion&>(self->getRotationAbsolute()));
+cal3d_wrapper.cpp:CalQuaternion *CalCoreBone_GetRotationBoneSpace(CalCoreBone *self)
+cal3d_wrapper.cpp:  return &(const_cast<CalQuaternion&>(self->getRotationBoneSpace()));
+cal3d_wrapper.cpp:void CalCoreBone_SetRotation(CalCoreBone *self, CalQuaternion *pRotation)
+cal3d_wrapper.cpp:void CalCoreBone_SetRotationBoneSpace(CalCoreBone *self, CalQuaternion *pRotation)
+cal3d_wrapper.cpp:// CalQuaternion wrapper functions definition                                 //
+cal3d_wrapper.cpp:void CalQuaternion_Blend(CalQuaternion *self, float d, CalQuaternion *pQ)
+cal3d_wrapper.cpp:void CalQuaternion_Clear(CalQuaternion *self)
+cal3d_wrapper.cpp:void CalQuaternion_Conjugate(CalQuaternion *self)
+cal3d_wrapper.cpp:void CalQuaternion_Delete(CalQuaternion *self)
+cal3d_wrapper.cpp:void CalQuaternion_Equal(CalQuaternion *self, CalQuaternion *pQ)
+cal3d_wrapper.cpp:float *CalQuaternion_Get(CalQuaternion *self)
+cal3d_wrapper.cpp:void CalQuaternion_Multiply(CalQuaternion *self, CalQuaternion *pQ)
+cal3d_wrapper.cpp:void CalQuaternion_MultiplyVector(CalQuaternion *self, CalVector *pV)
+cal3d_wrapper.cpp:CalQuaternion *CalQuaternion_New()
+cal3d_wrapper.cpp:  return new CalQuaternion();
+cal3d_wrapper.cpp:void CalQuaternion_Op_Multiply(CalQuaternion *pResult, CalQuaternion *pQ, CalQuaternion *pR)
+cal3d_wrapper.cpp:void CalQuaternion_Set(CalQuaternion *self, float qx, float qy, float qz, float qw)
+cal3d_wrapper.cpp:void CalVector_Transform(CalVector *self, CalQuaternion *pQ)
+cal3d_wrapper.h:struct CalQuaternion;
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalBone_BlendState(struct CalBone *self, float weight, struct CalVector *pTranslation, struct CalQuaternion *pRotation);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API struct CalQuaternion *CalBone_GetRotation(struct CalBone *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API struct CalQuaternion *CalBone_GetRotationAbsolute(struct CalBone *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API struct CalQuaternion *CalBone_GetRotationBoneSpace(struct CalBone *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalBone_SetRotation(struct CalBone *self, struct CalQuaternion *pRotation);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API struct CalQuaternion *CalCoreBone_GetRotation(struct CalCoreBone *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API struct CalQuaternion *CalCoreBone_GetRotationAbsolute(struct CalCoreBone *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API struct CalQuaternion *CalCoreBone_GetRotationBoneSpace(struct CalCoreBone *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalCoreBone_SetRotation(struct CalCoreBone *self, struct CalQuaternion *pRotation);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalCoreBone_SetRotationBoneSpace(struct CalCoreBone *self, struct CalQuaternion *pRotation);
+cal3d_wrapper.h:// CalQuaternion wrapper functions declaration                                //
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_Blend(struct CalQuaternion *self, float d, struct CalQuaternion *pQ);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_Clear(struct CalQuaternion *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_Conjugate(struct CalQuaternion *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_Delete(struct CalQuaternion *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_Equal(struct CalQuaternion *self, struct CalQuaternion *pQ);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API float *CalQuaternion_Get(struct CalQuaternion *self);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_Multiply(struct CalQuaternion *self, struct CalQuaternion *pQ);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_MultiplyVector(struct CalQuaternion *self, struct CalVector *pV);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API struct CalQuaternion *CalQuaternion_New();
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_Op_Multiply(struct CalQuaternion *pResult, struct CalQuaternion *pQ, struct CalQuaternion *pR);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalQuaternion_Set(struct CalQuaternion *self, float qx, float qy, float qz, float qw);
+cal3d_wrapper.h:  CAL3D_WRAPPER_API void CalVector_Transform(struct CalVector *self, struct CalQuaternion *pQ);
+corebone.cpp:const CalQuaternion& CalCoreBone::getRotation()
+corebone.cpp:const CalQuaternion& CalCoreBone::getRotationAbsolute()
+corebone.cpp:const CalQuaternion& CalCoreBone::getRotationBoneSpace()
+corebone.cpp:void CalCoreBone::setRotation(const CalQuaternion& rotation)
+corebone.cpp:void CalCoreBone::setRotationBoneSpace(const CalQuaternion& rotation)
+corebone.cpp:   CalQuaternion rot;
+corebone.h:  const CalQuaternion& getRotation();
+corebone.h:  const CalQuaternion& getRotationAbsolute();
+corebone.h:  const CalQuaternion& getRotationBoneSpace();
+corebone.h:  void setRotation(const CalQuaternion& rotation);
+corebone.h:  void setRotationBoneSpace(const CalQuaternion& rotation);
+corebone.h:  CalQuaternion m_rotation;
+corebone.h:  CalQuaternion m_rotationAbsolute;
+corebone.h:  CalQuaternion m_rotationBoneSpace;
+corekeyframe.cpp:const CalQuaternion& CalCoreKeyframe::getRotation()
+corekeyframe.cpp:void CalCoreKeyframe::setRotation(const CalQuaternion& rotation)
+corekeyframe.h:  CalQuaternion m_rotation;
+corekeyframe.h:  const CalQuaternion& getRotation();
+corekeyframe.h:  void setRotation(const CalQuaternion& rotation);
+coretrack.cpp:bool CalCoreTrack::getState(float time, CalVector& translation, CalQuaternion& rotation)
+coretrack.h:  bool getState(float time, CalVector& translation, CalQuaternion& rotation);
+hardwaremodel.cpp:const CalQuaternion & CalHardwareModel::getRotationBoneSpace(int boneId, CalSkeleton *pSkeleton)
+hardwaremodel.h:  const CalQuaternion & getRotationBoneSpace(int boneId, CalSkeleton *pSkeleton);
+loader.cpp:  CalQuaternion rot(rx,ry,rz,rw);
+loader.cpp:  CalQuaternion rotbs(rxBoneSpace, ryBoneSpace, rzBoneSpace, rwBoneSpace);
+loader.cpp:      CalQuaternion x_axis_90(0.7071067811f,0.0f,0.0f,0.7071067811f);
+loader.cpp:  pCoreKeyframe->setRotation(CalQuaternion(rx, ry, rz, rw));
+loader.cpp:        CalQuaternion rot = pCoreKeyframe->getRotation();
+loader.cpp:        CalQuaternion x_axis_90(0.7071067811f,0.0f,0.0f,0.7071067811f);
+loader.cpp:		CalQuaternion rot = CalQuaternion(rx, ry, rz, rw);
+loader.cpp:				CalQuaternion x_axis_90(0.7071067811f,0.0f,0.0f,0.7071067811f);
+loader.cpp:		pCoreBone->setRotationBoneSpace(CalQuaternion(rxBoneSpace, ryBoneSpace, rzBoneSpace, rwBoneSpace));
+loader.cpp:			pCoreKeyframe->setRotation(CalQuaternion(rx, ry, rz, rw));
+loader.cpp:					CalQuaternion rot = pCoreKeyframe->getRotation();
+loader.cpp:					CalQuaternion x_axis_90(0.7071067811f,0.0f,0.0f,0.7071067811f);
+matrix.cpp:/** Quaternion to Matrix Conversion Constructor
+matrix.cpp:CalMatrix::CalMatrix(const CalQuaternion& q)
+matrix.cpp:/** Quaternion to Matrix Conversion.
+matrix.cpp:void CalMatrix::operator =(const CalQuaternion& q)
+matrix.h:class CalQuaternion;
+matrix.h:	CalMatrix(const CalQuaternion &q);
+matrix.h:	void operator=(const CalQuaternion& q);
+mixer.cpp:      CalQuaternion rotation;
+mixer.cpp:      CalQuaternion rotation;
+quaternion.cpp:CalQuaternion::CalQuaternion()
+quaternion.cpp:CalQuaternion::CalQuaternion(const CalQuaternion& q)
+quaternion.cpp:CalQuaternion::CalQuaternion(float qx, float qy, float qz, float qw)
+quaternion.cpp:CalQuaternion::~CalQuaternion()
+quaternion.cpp:float& CalQuaternion::operator[](unsigned int index)
+quaternion.cpp:const float& CalQuaternion::operator[](unsigned int index) const
+quaternion.cpp:void CalQuaternion::operator=(const CalQuaternion& q)
+quaternion.cpp:void CalQuaternion::operator*=(const CalQuaternion& q)
+quaternion.cpp:void CalQuaternion::operator*=(const CalVector& v)
+quaternion.cpp:CalQuaternion operator*(const CalQuaternion& q, const CalQuaternion& r)
+quaternion.cpp:  return CalQuaternion(
+quaternion.cpp:void CalQuaternion::blend(float d, const CalQuaternion& q)
+quaternion.cpp:void CalQuaternion::clear()
+quaternion.cpp:void CalQuaternion::conjugate()
+quaternion.cpp:void CalQuaternion::invert()
+quaternion.cpp:void CalQuaternion::set(float qx, float qy, float qz, float qw)
+quaternion.cpp:CalQuaternion shortestArc( const CalVector& from, const CalVector& to )
+quaternion.cpp:   return CalQuaternion( cross[0], cross[1], cross[2], -dot/2 ) ; 
+quaternion.h:class CAL3D_API CalQuaternion
+quaternion.h:	inline CalQuaternion() : x(0.0f), y(0.0f), z(0.0f), w(1.0f){};
+quaternion.h:	inline CalQuaternion(const CalQuaternion& q): x(q.x), y(q.y), z(q.z), w(q.w) {};
+quaternion.h:	inline CalQuaternion(float qx, float qy, float qz, float qw): x(qx), y(qy), z(qz), w(qw) {};
+quaternion.h:	inline ~CalQuaternion() {};
+quaternion.h:	inline void operator=(const CalQuaternion& q)
+quaternion.h:	inline void operator*=(const CalQuaternion& q)
+quaternion.h:  inline bool operator==(const CalQuaternion& rhs) const
+quaternion.h:  inline bool operator!=(const CalQuaternion& rhs) const
+quaternion.h:	static inline CalQuaternion operator*(const CalQuaternion& q, const CalQuaternion& r)
+quaternion.h:		return CalQuaternion(
+quaternion.h:	inline void blend(float d, const CalQuaternion& q)
+quaternion.h:	static inline CalQuaternion shortestArc( const CalVector& from, const CalVector& to )
+quaternion.h:		return CalQuaternion( cross[0], cross[1], cross[2], -dot/2 ) ; 
+quaternion.h:static inline CalQuaternion operator*(const CalQuaternion& q, const CalQuaternion& r)
+quaternion.h:	return CalQuaternion(
+quaternion.h:static inline CalQuaternion shortestArc( const CalVector& from, const CalVector& to )
+quaternion.h:	return CalQuaternion( cross[0], cross[1], cross[2], -dot/2 ) ; 
+saver.cpp:  const CalQuaternion& rotation = pCoreBone->getRotation();
+saver.cpp:  const CalQuaternion& rotationBoneSpace = pCoreBone->getRotationBoneSpace();
+saver.cpp:  const CalQuaternion& rotation = pCoreKeyframe->getRotation();
+saver.cpp:	  const CalQuaternion& rotationQuad = pCoreBone->getRotation();  
+saver.cpp:	  const CalQuaternion& localrotationQuad = pCoreBone->getRotationBoneSpace();        
+saver.cpp:			const CalQuaternion& rotationQuad = pCoreKeyframe->getRotation();  
+transform.h:    Transform(const CalVector& translation, const CalQuaternion& rotation)
+transform.h:    const CalQuaternion& getRotation() const
+transform.h:    CalQuaternion& getRotation()
+transform.h:    void setRotation(const CalQuaternion& rotation)
+transform.h:     CalQuaternion m_rotation;
+vector.cpp:void CalVector::operator*=(const CalQuaternion& q)
+vector.cpp:  CalQuaternion temp(-q.x, -q.y, -q.z, q.w);
+vector.h:class CalQuaternion;
+vector.h:  void operator*=(const CalQuaternion& q);

@@ -1,0 +1,16 @@
+Build instructions for mac
+src directory will contain your simulator, agent, environment, crowdSim source files (.h&.cpp).
+
+1. Make sure cal3d library is in main src directory (as should cal3ddata directory)
+
+2. Compile Cal3d Library
+to compile cal3d:
+- cd cal3d-0.11.0
+- ./configure --enable-static=yes --enable-shared=no #--with-cxx=g++-mp-4.9 --with-cc=gcc-mp-4.9
+- make clean
+- make
+
+
+3. In main src directory:
+$ make
+This should build crowdSim executable

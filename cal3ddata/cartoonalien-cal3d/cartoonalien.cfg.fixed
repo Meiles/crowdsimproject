@@ -1,0 +1,80 @@
+#
+# cal3d model configuration file
+#
+# File written by Misfit Model 3D
+# http://www.misfitcode.com/misfitmodel3d/
+
+path=data/cartoonalien/
+
+# --- Skeleton ---
+skeleton = cartoonalien.csf
+
+# --- Animations ---
+animation=cally_idle.caf
+animation=cally_tornado_kick.caf
+animation=cally_walk.caf
+animation=simpleman_wait.caf
+animation=cally_jog.caf
+animation=cally_shoot_arrow.caf
+animation=cally_wave.caf
+
+# --- Meshes ---
+mesh= cartoonalienbody_1.cmf
+mesh= cartoonaliencornea_1.cmf
+mesh= cartoonalieneyewhite_1.cmf
+mesh= cartoonaliengum1_1.cmf
+mesh= cartoonaliengum2_1.cmf
+mesh= cartoonalienhead_1.cmf
+mesh= cartoonalieninnermouth_1.cmf
+mesh= cartoonalieniris_1.cmf
+mesh= cartoonalienlash_1.cmf
+mesh= cartoonalienlips_1.cmf
+mesh= cartoonalienpupil_1.cmf
+mesh= cartoonalienskinankle_1.cmf
+mesh= cartoonalienskinarm_1.cmf
+mesh= cartoonalienskinfeet_1.cmf
+mesh= cartoonalienskinforearm_1.cmf
+mesh= cartoonalienskinhands_1.cmf
+mesh= cartoonalienskinhip_1.cmf
+mesh= cartoonalienskinknee_1.cmf
+mesh= cartoonalienskinneck_1.cmf
+mesh= cartoonalienskinshin_1.cmf
+mesh= cartoonalienskinshoulders_1.cmf
+mesh= cartoonalienskinthigh_1.cmf
+mesh= cartoonalienskintorso_1.cmf
+mesh= cartoonalienskinupperneck_1.cmf
+mesh= cartoonalienskinwrist_1.cmf
+mesh= cartoonalienteeth2_1.cmf
+mesh= cartoonalienteeth_1.cmf
+mesh= cartoonalientongue_1.cmf
+
+# --- Materials ---
+material= fullbody.xrf
+material= cartoonalien:Lips_1.xrf
+material= cartoonalien:SkinAnkle_1.xrf
+material= cartoonalien:SkinArm_1.xrf
+material= cartoonalien:SkinFeet_1.xrf
+material= cartoonalien:SkinForeArm_1.xrf
+material= cartoonalien:SkinHands_1.xrf
+material= cartoonalien:SkinHip_1.xrf
+material= cartoonalien:SkinKnee_1.xrf
+material= cartoonalien:SkinNeck_1.xrf
+material= cartoonalien:SkinShin_1.xrf
+material= cartoonalien:SkinShoulders_1.xrf
+material= cartoonalien:SkinThigh_1.xrf
+material= cartoonalien:SkinTorso_1.xrf
+material= cartoonalien:SkinUpperNeck_1.xrf
+material= cartoonalien:SkinWrist_1.xrf
+material= cartoonalien:cornea_1.xrf
+material= cartoonalien:eyewhite_1.xrf
+material= cartoonalien:gum1_1.xrf
+material= cartoonalien:gum2_1.xrf
+material= cartoonalien:head_1.xrf
+material= cartoonalien:innermouth_1.xrf
+material= cartoonalien:iris_1.xrf
+material= cartoonalien:lash_1.xrf
+material= cartoonalien:pupil_1.xrf
+material= cartoonalien:teeth2_1.xrf
+material= cartoonalien:teeth_1.xrf
+material= cartoonalien:tongue_1.xrf
+

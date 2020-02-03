@@ -1,0 +1,37 @@
+#
+# cal3d model configuration file
+#
+# File written by Misfit Model 3D
+# http://www.misfitcode.com/misfitmodel3d/
+
+path=data/masterchief/
+
+# --- Skeleton ---
+skeleton = masterchief.csf
+
+# --- Animations ---
+animation=cally_idle.caf
+animation=cally_tornado_kick.caf
+animation=cally_walk.caf
+animation=simpleman_wait.caf
+animation=cally_jog.caf
+animation=cally_shoot_arrow.caf
+animation=cally_wave.caf
+
+# --- Meshes ---
+mesh= head.cmf
+mesh= larm.cmf
+mesh= lleg.cmf
+mesh= rarm.cmf
+mesh= rleg.cmf
+mesh= torso.cmf
+mesh= torso1.cmf
+mesh= torso2.cmf
+
+# --- Materials ---
+material= fullbody.xrf
+material= masterchief:Material.xrf
+material= masterchief:Material2.xrf
+material= masterchief:Material.xrf
+material= masterchief:Material2.xrf
+
